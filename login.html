@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <style>
+        body {
+            background-image: url(images/loginhome1.jpg);
+
+            background-size: cover;
+        }
+
+
+        .register .nav-tabs .nav-link:hover {
+            border: none;
+            padding-top: 10%;
+        }
+
+        .text-align {
+            margin-top: -1%;
+            margin-bottom: -3%;
+            margin-top: 20px;
+            padding: 1%;
+            margin-left: 2%;
+
+
+
+        }
+
+        .head {
+            border-style: outset;
+            border-color: azure;
+            border-radius: 100px;
+            margin-bottom: 20px;
+            background-color: grey;
+
+            text-align: center;
+        }
+
+        .form-new {
+            margin-right: 10%;
+            margin-left: 15%;
+
+
+        }
+
+        .register-heading {
+            margin-left: 20%;
+            margin-bottom: 10%;
+            color: #e9ecef;
+            padding-bottom: 10%;
+            text-decoration: underline;
+
+            text-decoration-color: red;
+            text-underline-offset: 5px;
+        }
+
+        .register-heading h1 {
+            margin-left: 30%;
+            margin-bottom: 10%;
+            color: #e9ecef;
+            padding-top: 1%;
+
+        }
+
+        .register {
+            width: 800px;
+            background: -webkit-linear-gradient(left, rgb(33, 10, 10), black);
+            margin-top: 10%;
+            padding: 2.5%;
+            padding-left: 10px;
+            padding-top: 1%;
+            border-radius: 1rem;
+            border-color: red;
+            height: 500px;
+            width: 400px;
+        }
+
+        .btnSubmit2 {
+            margin-top: 22px;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left: 3px;
+            padding-right: 3%;
+            border-radius: 0.3rem;
+
+        }
+
+        .btnSubmit {
+            width: 1%;
+            border-radius: 5rem;
+            border-style: outset;
+            padding: 2.5%;
+            color: #fff;
+            background-color: orangered;
+            border: none;
+            cursor: pointer;
+            margin-right: 2%;
+            color: rgb(246, 246, 252);
+            margin-top: 14%;
+            g
+        }
+    </style>
+    <script>
+        function validate() {
+            var a = document.f1.pass.value;
+            var b = document.f1.pass1.value;
+            if (a == "") {
+                alert("Enter the Password");
+                return false;
+            }
+
+            if ((a.length < 4) || (a.length > 8)) {
+                alert("Password must be 4 to 8 ");
+            }
+            if (a != b) {
+                alert("Password does not matched");
+                return false;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <a href="index.html" ></a>
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel"
+                    aria-labelledby="home-tab">
+
+                    <div class="row register-form">
+                        <div class="col-md-12">
+
+                            <form name="f1" action="" method="post" onsubmit="function validate()"></form>
+                            <div class="head">
+                                <h3>REGISTER FREE</h3>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Name" class="form-control" placeholder="Your Name *" value=""
+                                    required="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Email" ssssclass="form-control" placeholder="Your Email *"
+                                    value="" required="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="Phone" class="form-control"
+                                    placeholder="Your Contact Number *" value="" required="" />
+                            </div>
+                            <div class="form-set">
+                                <input type="password" name="pass" class="form-control"
+                                    placeholder="Enter your password" value="" required="" />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" name="pass1" class="btnSubmit2 btn-block"
+                                    placeholder="Enter your confirm Password" value="submit" />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btnSubmit btn-block"
+                                    onclick="alert('CONGRATULATION BEING A MEMBER  OF WEDDING PLANNER!!')"
+                                    value="Submit">
+
+                            </div>
+
+
+
+                            </form>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
