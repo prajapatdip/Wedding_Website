@@ -1,0 +1,1 @@
+In this website we use HTML, CSS and JavaScript making this site responsive. Also we use API for posting data of booking to the email. This site is made for every one who want to plan the wedding at one place and according to your comfort.
